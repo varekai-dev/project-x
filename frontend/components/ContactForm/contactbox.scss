@@ -1,0 +1,82 @@
+@import "../../styles/vars";
+
+//contact
+.contact__inner {
+	padding-bottom: 50px;
+}
+.contact__title {
+	text-align: center;
+}
+.contact__inner {
+	max-width: 720px;
+	margin: 0 auto;
+}
+.contact__title {
+	margin-bottom: 50px;
+}
+.contact__form {
+	label {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.contact__email {
+		width: 72%;
+		height: 50px;
+		padding: 0 20px;
+		margin-right: 20px;
+		border-radius: 10px;
+		box-shadow: none;
+		outline: none;
+		border: none;
+		font-weight: 400;
+		font-size: 16px;
+		&::placeholder {
+			color: #c5bebe;
+		}
+	}
+	.contact__btn {
+		cursor: pointer;
+		outline: none;
+		width: 25%;
+		border-radius: 10px;
+		height: 50px;
+		box-shadow: none;
+		border: none;
+		color: white;
+		font-weight: 700;
+		font-size: 15px;
+		background: $info;
+		&:hover {
+			background: $infoDark;
+			transform: scale(1.02);
+		}
+		&:active {
+			transform: scale(0.95);
+			background: $infoDark;
+		}
+	}
+}
+.Toastify__toast--success {
+	background: #009e69 !important;
+}
+
+@media (max-width: 760px) {
+	.contact__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.contact__form .contact__email {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.contact__btn {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.contact__form .contact__btn {
+		width: auto;
+		padding: 0 20px;
+	}
+}

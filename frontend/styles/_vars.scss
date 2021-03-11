@@ -1,5 +1,6 @@
 $background: #172030;
 $mainColor: #ffffff;
+$mainDark: #000;
 $active: #192843;
 $mainSize: 16px;
 $borderColor: #2f3d56;
@@ -9,3 +10,12 @@ $infoDark: #2a59a8;
 $success: #009e69;
 $successDark: #00734d;
 $secondary: #c8c8c8;
+$danger: #ff5c63;
+$dangerDark: #661e2e;
+
+@mixin content {
+	background: $active;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid $borderColor;
+}

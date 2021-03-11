@@ -1,0 +1,147 @@
+@import "../../styles/vars";
+
+.popup {
+	overflow-y: auto;
+	max-height: 80vh;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	border-radius: 10px;
+	background: $mainColor;
+	color: $mainDark;
+	padding: 4rem;
+
+	.popup__top {
+		display: flex;
+		font-size: 22px;
+		font-weight: 700;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+		img {
+			width: 100px;
+			border-radius: 10px;
+		}
+	}
+	.popup__text {
+		font-size: 18px;
+		padding-right: 20%;
+		line-height: 30px;
+		padding-bottom: 40px;
+	}
+	.font-bold {
+		font-weight: 700;
+	}
+	.text-base {
+		font-size: 17px;
+		line-height: 35px;
+	}
+
+	.popup__btns {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		color: white;
+	}
+	.popup__btn {
+		cursor: pointer;
+		transition: all 0.3s;
+		strong {
+			padding-left: 5px;
+		}
+		background: $active;
+		width: 32%;
+		display: flex;
+		white-space: nowrap;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		border-radius: 10px;
+	}
+	.popup__review {
+		cursor: pointer;
+		background: $info;
+		&:hover {
+			background: $infoDark;
+		}
+	}
+
+	.popup__review {
+		background: $info;
+		&:hover {
+			background: $infoDark;
+		}
+	}
+	.popup__bonus {
+		background: $success;
+		&:hover {
+			background: $successDark;
+		}
+	}
+
+	.popup__close {
+		svg {
+			margin-left: 5px;
+		}
+		background: $danger;
+		&:hover {
+			background: $dangerDark;
+		}
+	}
+}
+
+@media (max-width: 880px) {
+	.popup {
+		.popup__title {
+			font-size: 20px;
+		}
+		.popup__text {
+			font-size: 16px;
+			padding-right: 10%;
+			line-height: 28px;
+			padding-bottom: 20px;
+		}
+		.text-base {
+			font-size: 16px;
+			line-height: 28px;
+		}
+	}
+}
+@media (max-width: 850px) {
+	.popup {
+		padding: 2rem;
+		width: 90%;
+		.popup__btns {
+			flex-wrap: wrap;
+		}
+		.popup__btn {
+			margin: 8px 0;
+		}
+		.popup__review {
+			width: 48%;
+			order: 1;
+		}
+		.popup__bonus {
+			width: 100%;
+			order: 3;
+		}
+		.popup__close {
+			width: 48%;
+			order: 2;
+		}
+	}
+}
+
+@media (max-width: 440px) {
+	.popup {
+		.popup__review {
+			width: 100%;
+		}
+		.popup__close {
+			width: 100%;
+		}
+	}
+}

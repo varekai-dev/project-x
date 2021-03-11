@@ -1,0 +1,9 @@
+@import "../../styles/vars";
+
+.content__box-inner {
+	padding: 10px 30px 30px;
+	background: $active;
+	border: 1px solid $borderColor;
+	border-radius: 5px;
+	margin-bottom: 50px;
+}
