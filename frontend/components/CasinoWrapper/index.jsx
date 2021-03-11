@@ -63,7 +63,7 @@ function CasinoWrapper({ info = {}, review, post = false, main = false }) {
             <InfoBtn review={review} info={info} />
             {review && (
               <>
-                <Link href={`http://localhost:3000/casinos/${info.title}`}>
+                <Link href={`http://localhost:3000/casinos/${info.id}`}>
                   <a className="casino__review-link">
                     {" "}
                     Read our <strong>review</strong>{" "}

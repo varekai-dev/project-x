@@ -3,7 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/casinos/[pid]": "pages/casinos/[pid].js",
-  "/": "pages/index.js",
-  "/casinos": "pages/casinos.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
+  "/": "pages/index.js"
 }
