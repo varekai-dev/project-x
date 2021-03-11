@@ -1,22 +1,18 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
+import Rating from "@material-ui/lab/Rating";
 
-function CasinoReview() {
-	return (
-		<>
-			<div className="casino__rating">
-				<div className="casino__rating-start">
-					{" "}
-					<FaStar />
-					<FaStar />
-					<FaStar />
-					<FaStar />
-					<FaStar />
-				</div>
-				<div className="casino__rating-numbers">9.80 / 10</div>
-			</div>
-		</>
-	);
+function CasinoReview({ rating }) {
+  const newRating = rating / 2;
+  return (
+    <>
+      <div className="casino__rating">
+        <div className="casino__rating-start">
+          <Rating precision={0.5} name="read-only" value={newRating} readOnly />
+        </div>
+        <div className="casino__rating-numbers">{rating} / 10</div>
+      </div>
+    </>
+  );
 }
 
 export default CasinoReview;

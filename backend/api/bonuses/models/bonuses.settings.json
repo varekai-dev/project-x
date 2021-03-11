@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bonuses",
+  "info": {
+    "name": "bonus",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "casino": {
+      "model": "casino",
+      "via": "bonuses"
+    },
+    "exlusive": {
+      "type": "boolean",
+      "required": true
+    },
+    "percentage": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "string",
+      "required": true
+    },
+    "bonusCode": {
+      "type": "string",
+      "required": true
+    },
+    "bonusInfo": {
+      "type": "richtext",
+      "required": true
+    },
+    "wager": {
+      "type": "string",
+      "required": true
+    },
+    "minDeposit": {
+      "type": "string",
+      "required": true
+    },
+    "vpnAllowed": {
+      "type": "boolean",
+      "required": true
+    },
+    "bonusHuntAllowed": {
+      "type": "boolean",
+      "required": true
+    },
+    "cryptocurrencies": {
+      "type": "boolean"
+    },
+    "bonusHuntUnderBonus": {
+      "type": "boolean",
+      "required": true
+    },
+    "maxBet": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

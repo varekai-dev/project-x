@@ -10,7 +10,9 @@
   "dependencies": {
     "@enzsft/react-cookie-consents": "^1.0.0",
     "@material-ui/core": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.57",
     "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.21.1",
     "babel-preset-es2015": "^6.24.1",
     "clsx": "^1.1.1",
     "emailjs-com": "^2.6.4",

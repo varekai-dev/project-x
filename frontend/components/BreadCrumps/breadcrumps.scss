@@ -1,26 +1,28 @@
+@import "../../styles/vars";
+
 .post__breadcrumps {
-	display: flex;
-	margin-bottom: 20px;
-	a {
-		color: $secondary;
-		&:hover {
-			color: white;
-			text-decoration: underline;
-		}
-	}
+  display: flex;
+  margin-bottom: 20px;
+  a {
+    color: $secondary;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
 }
 
 .post__breadcrump {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: row;
-	padding-right: 40px;
-	position: relative;
-	svg {
-		right: 10px;
-		position: absolute;
-		width: 20px;
-		height: 20px;
-	}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 40px;
+  position: relative;
+  svg {
+    right: 10px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  }
 }

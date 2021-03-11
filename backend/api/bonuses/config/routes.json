@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bonuses",
+      "handler": "bonuses.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bonuses/count",
+      "handler": "bonuses.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bonuses/:id",
+      "handler": "bonuses.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bonuses",
+      "handler": "bonuses.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bonuses/:id",
+      "handler": "bonuses.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bonuses/:id",
+      "handler": "bonuses.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

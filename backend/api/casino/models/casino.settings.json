@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "casinos",
+  "info": {
+    "name": "casino",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "mainContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "Owner": {
+      "type": "string",
+      "required": true
+    },
+    "Founded": {
+      "type": "string",
+      "required": true
+    },
+    "minDeposit": {
+      "type": "string",
+      "required": true
+    },
+    "ratingBonuses": {
+      "type": "integer",
+      "required": true
+    },
+    "ratingWebsite": {
+      "type": "integer",
+      "required": true
+    },
+    "Overlay": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "bonuses": {
+      "via": "casino",
+      "collection": "bonuses"
+    },
+    "affiliateLink": {
+      "type": "string",
+      "required": true
+    },
+    "ratingTotal": {
+      "type": "decimal",
+      "required": true
+    },
+    "ratingGameProviders": {
+      "type": "integer",
+      "required": true
+    },
+    "RatingPaymentProviders": {
+      "type": "integer",
+      "required": true
+    },
+    "ratingSupport": {
+      "type": "integer",
+      "required": true
+    },
+    "website": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
