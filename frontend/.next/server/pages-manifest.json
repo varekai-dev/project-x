@@ -3,5 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/casinos/[pid]": "pages/casinos/[pid].js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/casinos": "pages/casinos.js"
 }

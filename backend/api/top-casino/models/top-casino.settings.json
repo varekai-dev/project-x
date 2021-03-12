@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "top_casinos",
+  "info": {
+    "name": "TopCasino",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "place": {
+      "type": "integer",
+      "required": true
+    },
+    "topPlace": {
+      "via": "topCasinos",
+      "model": "casino"
+    }
+  }
+}

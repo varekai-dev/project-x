@@ -51,8 +51,8 @@
       "required": true
     },
     "bonuses": {
-      "via": "casino",
-      "collection": "bonuses"
+      "collection": "bonuses",
+      "via": "casino"
     },
     "affiliateLink": {
       "type": "string",
@@ -76,6 +76,29 @@
     },
     "website": {
       "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "payments": {
+      "collection": "payments",
+      "via": "casinos"
+    },
+    "topCasinos": {
+      "collection": "top-casino",
+      "via": "topPlace"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
       "required": true
     }
   }

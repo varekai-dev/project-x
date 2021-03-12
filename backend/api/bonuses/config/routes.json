@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/bonuses/:id",
+      "path": "/bonuses/:slug",
       "handler": "bonuses.findOne",
       "config": {
         "policies": []

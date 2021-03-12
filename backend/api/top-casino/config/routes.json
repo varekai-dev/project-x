@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/top-casinos",
+      "handler": "top-casino.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/top-casinos/count",
+      "handler": "top-casino.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/top-casinos/:id",
+      "handler": "top-casino.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/top-casinos",
+      "handler": "top-casino.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/top-casinos/:id",
+      "handler": "top-casino.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/top-casinos/:id",
+      "handler": "top-casino.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

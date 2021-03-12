@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/casinos/:id",
+      "path": "/casinos/:slug",
       "handler": "casino.findOne",
       "config": {
         "policies": []

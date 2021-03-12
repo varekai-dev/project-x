@@ -12,8 +12,8 @@
   },
   "attributes": {
     "casino": {
-      "model": "casino",
-      "via": "bonuses"
+      "via": "bonuses",
+      "model": "casino"
     },
     "exlusive": {
       "type": "boolean",
@@ -65,6 +65,10 @@
     "title": {
       "type": "string",
       "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
